@@ -96,15 +96,25 @@ class OnboardingPage extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: 25,),
-                    Text(
-                      item['title']!,
-                      style: onboardingTextStyle18.copyWith(fontSize: 34),
+                     Padding(
+                      padding: const EdgeInsets.only(left: 20,right: 10),
+                      child: Text(
+                        item['title']!,
+                        style: onboardingTextStyle18.copyWith(
+                          fontSize: 34,
+                          letterSpacing: 1.2,
+                        ),
+                      ),
                     ),
                     const SizedBox(height: 20,),
-                    Text(
-                      item['subtitle']!,
-                      textAlign: TextAlign.start,
-                      style: onboardingTextStyle14,
+                        Padding(
+                      padding: const EdgeInsets.only(left: 20,right: 5),
+                      child: Text(
+                        item['subtitle']!,
+                        style: onboardingTextStyle14.copyWith(
+                          letterSpacing: 1.2,
+                        ),
+                      ),
                     ),
                     const SizedBox(height: 30,),
                   ],
